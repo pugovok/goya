@@ -85,9 +85,7 @@ func (s *Server) LoadConfig(configName string) error {
 	return nil
 }
 
-func (s *Server) Run() {
-	ctx := context.Background()
-
+func (s *Server) Run(ctx context.Context) {
 	if s.Config.Metrics.Enable {
 		s.Log.Info("Prometheus server is enabled")
 

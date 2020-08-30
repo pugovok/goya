@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"fmt"
 
 	"github.com/pugovok/goya/app"
@@ -19,5 +20,5 @@ func main() {
 		fmt.Println(err)
 	}
 
-	server.Run()
+	server.Run(context.Background())
 }
