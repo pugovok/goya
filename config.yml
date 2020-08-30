@@ -1,0 +1,16 @@
+app_name: "default-app-name"
+
+# configuration viper logger
+log:
+  format: "text"
+  level: "debug"
+
+# configuration prometheus server
+metrics:
+  enable: true
+  port: ":9000"
+
+# configuration web server
+web:
+  enable: true
+  port: ":8080"
